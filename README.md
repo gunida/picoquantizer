@@ -1,12 +1,10 @@
 # Quantizer
-
 Quantizes input voltage to the seven modes + chromatic
 
 ## Input
-
--1v/oct
--Scale selector
+CV to sample
+On/Off switches for each note in an octave C to C
 
 ## Output
-
--1v/oct
+Writes output voltage to DAC
+1V/oct
