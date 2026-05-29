@@ -15,18 +15,20 @@ if(WIN32)
 else()
     set(USERHOME $ENV{HOME})
 endif()
-set(sdkVersion 2.0.0)
+set(sdkVersion 2.1.1)
 set(toolchainVersion 13_2_Rel1)
-set(picotoolVersion 2.0.0)
+set(picotoolVersion 2.1.1)
 set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
 if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
+set(PICO_CXX_ENABLE_EXCEPTIONS 1)
 # ====================================================================================
 set(PICO_BOARD pico CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
+include_directories(inc)
 
 project(quantizer C CXX ASM)
 

@@ -1,0 +1,4 @@
+{
+  "cmake.sourceDirectory": "H:/git/picoquantizer/blink",
+  "sonarlint.pathToCompileCommands": "${workspaceFolder}/quantizer/build/compile_commands.json"
+}
