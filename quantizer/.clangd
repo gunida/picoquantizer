@@ -1,0 +1,11 @@
+CompileFlags:
+  Add:
+    - --target=arm-none-eabi
+    - --sysroot=/home/daniel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi
+    - -I/home/daniel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1
+    - -I/home/daniel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi
+    - -I/home/daniel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m
+  Remove:
+    - -mfloat-abi*
+    - -mfpu*
+  CompilationDatabase: build
